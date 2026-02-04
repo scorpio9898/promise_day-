@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Promise Day</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <style>
+        /* --- CSS STYLES --- */
+        :root {
+            --primary-color: #4A90E2; /* Blue for Trust */
+            --secondary-color: #F5F7FA;
+            --text-color: #2C3E50;
+            --accent-color: #E74C3C; /* Red for Love */
+            --paper-color: #ffffff;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+            min-height: 100vh;
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding: 3rem 1rem;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 4rem;
+            margin: 0;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            font-weight: 300;
+            margin-top: 10px;
+            opacity: 0.9;
+        }
+
+        /* Container */
+        .container {
+            width: 90%;
+            max-width: 900px;
+            margin-bottom: 3rem;
+        }
+
+        /* Promise Cards Grid */
+        .promise-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: var(--paper-color);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            border-top: 5px solid var(--primary-color);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+
+        .icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .promise-text {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            font-weight: 500;
+        }
+
+        /* Custom Promise Maker */
+        .custom-section {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 2rem;
+            border-radius: 20px;
+            margin-top: 3rem;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        input[type="text"] {
+            width: 80%;
+            padding: 15px;
+            border: 2px solid #ddd;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-family: 'Poppins', sans-serif;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        input[type="text"]:focus {
+            border-color: var(--primary-color);
+        }
+
+        button {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-size: 1rem;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(74, 144, 226, 0.3);
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background-color: #357abd;
+        }
+
+        /* The Result Card */
+        #new-promise-container {
+            margin-top: 30px;
+            display: none; /* Hidden by default */
+            animation: popIn 0.6s ease;
+        }
+
+        .stamp {
+            color: var(--accent-color);
+            font-family: 'Dancing Script', cursive;
+            font-size: 2rem;
+            transform: rotate(-5deg);
+            margin-top: 15px;
+            border: 2px solid var(--accent-color);
+            display: inline-block;
+            padding: 5px 20px;
+            border-radius: 10px;
+            opacity: 0.8;
+        }
+
+        @keyframes popIn {
+            0% { opacity: 0; transform: scale(0.8); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+
+        footer {
+            margin-top: auto;
+            padding: 1rem;
+            color: white;
+            font-size: 0.9rem;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Happy Promise Day</h1>
+        <div class="subtitle">screenshot and send me your promise 🥰 .</div>
+    </header>
+
+    <div class="container">
+        
+        <div class="promise-grid">
+            <div class="card">
+                <span class="icon">🤝</span>
+                <p class="promise-text">"I promise to always be your listener even  in the most busiest days , your biggest supporter after your parents ,  your lover and best friend, no matter what."</p>
+            </div>
+            <div class="card">
+                <span class="icon">🌅</span>
+                <p class="promise-text">"I promise to start every day with your thought with a smile for you and end every night with gratefulness of how special you are or me  for you."</p>
+            </div>
+            <div class="card">
+                <span class="icon">🔒</span>
+                <p class="promise-text">"I promise to keep your every secrets safe, your heart will always be secure with me , and breaking your heart must be the biggest sin i can do ."</p>
+            </div>
+        </div>
+
+        <div class="custom-section">
+            <h2>Make a Special Promise</h2>
+            <p>Type your own vow below and seal it digitally and screenshot me to whatsapp.</p>
+            
+            <div class="input-group">
+                <input type="text" id="userPromise" placeholder="I promise to..." autocomplete="off">
+                <button onclick="sealPromise()">Seal This Promise 🤞</button>
+            </div>
+
+            <div id="new-promise-container">
+                <div class="card" style="border-top: 5px solid var(--accent-color);">
+                    <span class="icon">❤️</span>
+                    <h3 style="margin:0;">Official Promise</h3>
+                    <p class="promise-text" id="displayPromise" style="font-style: italic;"></p>
+                    <div class="stamp">Signed & Sealed</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        Made with Trust & Love | Promise Day 2026
+    </footer>
+
+    <script>
+        function sealPromise() {
+            const inputField = document.getElementById('userPromise');
+            const displayField = document.getElementById('displayPromise');
+            const resultContainer = document.getElementById('new-promise-container');
+
+            const promiseText = inputField.value.trim();
+
+            if (promiseText === "") {
+                alert("Please type a promise first! ❤️");
+                return;
+            }
+
+            // Set the text
+            displayField.textContent = `"${promiseText}"`;
+
+            // Reveal the card
+            resultContainer.style.display = "block";
+
+            // Clear input
+            inputField.value = "";
+            
+            // Scroll to the new promise smoothly
+            resultContainer.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+</html>
